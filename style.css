@@ -129,3 +129,8 @@ header h2 {
   margin: 9px;
   background: black;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -43,22 +43,23 @@ function generatePictures(data) {
     galleryImg.innerHTML = ` 
     <img src=${photo.src.large}></img>
     <div class="gallery-info">
-    <p>${photo.photographer}</p> 
+    <p><a href=${photo.photographer_url}>${photo.photographer}</a></p> 
     <a href=${photo.src.original}>Download</a>
     </div>`;
     gallery.appendChild(galleryImg);
+    console.log(photo);
   });
 }
 
 async function curatedPhotos() {
-  fetchLink = "https://api.pexels.com/v1/curated?per_page=15&page=1";
+  fetchLink = "https://api.pexels.com/v1/curated?per_page=30&page=1";
   const data = await fetchAPI(fetchLink);
   generatePictures(data);
 }
 
 async function searchPhotos(query) {
   clear();
-  fetchLink = `https://api.pexels.com/v1/search?query=${query}+query&per_page=15&page=1`;
+  fetchLink = `https://api.pexels.com/v1/search?query=${query}+query&per_page=30&page=1`;
   const data = await fetchAPI(fetchLink);
   generatePictures(data);
 }
