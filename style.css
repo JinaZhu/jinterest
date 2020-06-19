@@ -10,24 +10,27 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 30vh;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+}
+
+.logo {
+  margin: 15px;
 }
 
 header h2 {
   padding: 2rem;
 }
 
-#logo {
-  text-decoration: none;
-  color: black;
-}
-
 .search-form {
-  padding: 2rem;
   display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
 }
 
 .search-form input {
@@ -35,16 +38,21 @@ header h2 {
   padding: 0.5rem;
   width: 100%;
   border: none;
-  border: 1px solid #8e688e;
+  height: 40px;
+  width: 400px;
+  outline: none;
+  color: gray;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica;
 }
 .search-form button {
   border: none;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  background: #8e688e;
-  color: white;
+  /* padding: 0.5rem; */
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: grey;
   cursor: pointer;
-  font-family: "Josefin Slab", sans-serif;
+  background: white;
 }
 
 .gallery-info {
@@ -89,4 +97,16 @@ header h2 {
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.search-bar {
+  background: white;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 24px;
+  height: 48px;
+  margin: 0 auto;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
 }
