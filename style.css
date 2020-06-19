@@ -109,6 +109,11 @@ header h2 {
   cursor: pointer;
 }
 
+.more:hover {
+  background: gray;
+  border: 1px solid gray;
+}
+
 .search-bar {
   background: white;
   display: flex;
@@ -128,6 +133,10 @@ header h2 {
   padding: 14px;
   margin: 9px;
   background: black;
+}
+
+.home:hover {
+  background: gray;
 }
 
 a {
