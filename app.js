@@ -1,4 +1,3 @@
-const auth = "563492ad6f91700001000001eab75c050171469d93186c19e531ae08";
 const gallery = document.querySelector(".gallery");
 const searchInput = document.querySelector(".search-input");
 const form = document.querySelector(".search-form");
@@ -29,7 +28,7 @@ async function fetchAPI(url) {
     method: "GET",
     headers: {
       Accept: "application/json",
-      Authorization: auth,
+      Authorization: pexelsApiKey,
     },
   });
   const data = await dataFetch.json();
@@ -44,7 +43,7 @@ function generatePictures(data) {
     <img src=${photo.src.large}></img>
     <div class="gallery-info">
     <p><a href=${photo.photographer_url}>${photo.photographer}</a></p> 
-    <a href=${photo.src.original}>Download</a>
+    <a href=${photo.src.original} target="_blank">Download</a>
     </div>`;
     gallery.appendChild(galleryImg);
     console.log(photo);
