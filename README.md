@@ -12,4 +12,5 @@
 
 - Search for any type of image you can imagine.
 - Load more results if nothing is the right fit.
+<br/>
   <img src="/homepage.png" width="250"/>
