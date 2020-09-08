@@ -1,16 +1,15 @@
 ## Jinterest
 
-20% Pinterest and 80% not quite Pinterest. Jinterest uses the
+20% Pinterest and 80% not quite Pinterest. Jinterest uses the Pexels api to find the inspiration you're looking for. Download and use high quality images for all your needs.
 
 ### Technologies
 
-- React
-- Styled Components
+- Vanilla JavaScript
+- HTML
+- CSS
 
 ### Features
 
-- 2 players game of tic tac toe.
-- Play to win but getting three in the row, column, or diagonal.
-- Reset and play again if there is a Tie.
-
-<img src="/src/static/homepage.png" width="250"/>
+- Search for any type of image you can imagine.
+- Load more results if nothing is the right fit.
+  <img src="/homepage.png" width="250"/>
